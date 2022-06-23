@@ -82,6 +82,7 @@ let QUIZ_INTRO = 0
 let QUIZ = 0
 let MORE_INFO = 0
 let BONES = 0
+music.startMelody(music.builtInMelody(Melodies.Entertainer), MelodyOptions.Once)
 makerbit.connectSerialMp3(DigitalPin.P13, DigitalPin.P14)
 PCA9685.reset(64)
 pins.touchSetMode(TouchTarget.P0, TouchTargetMode.Capacitive)
@@ -99,11 +100,9 @@ mode = BONES
 LED_OFF = 0
 LED_ON = 75
 MP3_DELAY = 400
-/**
- * Monitor touch sensors T5..T16
- * 
- * Remap T5..T16 to 16..1
- */
+// Monitor touch sensors T5..T16
+// 
+// Remap T5..T16 to 16..1
 basic.forever(function () {
     if (makerbit.wasTouched()) {
         actions(makerbit.touchSensor() * -1 + 17)

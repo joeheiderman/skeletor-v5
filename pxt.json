@@ -1,10 +1,8 @@
 {
-    "name": "skeletor V5",
+    "name": "skeletor V6",
     "description": "",
     "dependencies": {
         "core": "*",
-        "radio": "*",
-        "microphone": "*",
         "MakerBit-Touch": "github:1010technologies/pxt-makerbit-touch#v1.2.24",
         "MakerBit-MP3": "github:1010technologies/pxt-makerbit-mp3#v1.0.10",
         "my_pca": "github:joeheiderman/my_pca#bf95c13dea259563e62603a1fa0eedba4a8a35c0"
@@ -24,5 +22,5 @@
     "supportedTargets": [
         "microbit"
     ],
-    "preferredEditor": "tsprj"
+    "preferredEditor": "blocksprj"
 }
